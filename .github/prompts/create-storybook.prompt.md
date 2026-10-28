@@ -14,7 +14,7 @@ Do not merely summarize the book. Adapt its narrative into a sequence of cinemat
 Preserve the author's essential vision, themes, characters, tone, world, and central conflicts. Do not invent major plot developments or alter the ending without explicitly identifying the proposed changes and obtaining approval.
 
 Save final output in a structured format that can be easily referenced by screenwriters, directors, cinematographers, production designers, and editors.
-into `workspace/output/storybook` folder
+into `production/storybook` folder
 
 
 ## 2. ANALYZE THE SOURCE BOOK
