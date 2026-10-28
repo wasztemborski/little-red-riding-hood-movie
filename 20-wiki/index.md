@@ -7,13 +7,26 @@ page after every ingest — it is how the agent finds its way back into the vaul
 
 | Folder | Contents |
 | --- | --- |
-| `characters/` | One page per characters. |
-| `decisions/` | One page per decisions. |
-| `places/` | One page per places. |
+| `characters/` | One page per character. |
+| `decisions/` | One page per decision record. |
+| `places/` | One page per place. |
 
 ---
 
-## Pages
+## characters/
 
-_No pages yet. Add sources to `00-inbox/` and run the ingest workflow described
-in `AGENTS.md`._
+- [[red-riding-hood]] — the girl in the red cap
+- [[wolf]] — the antagonist
+- [[grandmother]] — the sick grandmother
+- [[mother]] — sends Red Riding Hood on her way
+- [[woodcutter]] — the rescuer
+
+## decisions/
+
+- [[leave-the-path]] — abandoning the road to pick flowers
+
+## places/
+
+- [[forest]] — the deep woods
+- [[flower-meadow]] — the clearing where the wolf appears
+- [[grandmother-cottage]] — the house in the middle of the forest
