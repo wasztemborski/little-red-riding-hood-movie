@@ -1,84 +1,47 @@
-# Ludd Movie — Second Brain
+# Little Red Riding Hood — A Storybook Film
 
-A personal knowledge base maintained by an AI coding agent, based on the
-[LLM Wiki pattern](https://github.com/karpathy/llm-wiki).
+A comprehensive visual storybook project for an animated adaptation of the classic fairy tale, organized as a creative knowledge base.
 
-## Quick start
+## Quick Preview
 
-1. **Clone the repo** (with submodules — sources live in submodules):
+![Little Red Riding Hood Movie Preview](preview/red-preview.png)
 
-   ```bash
-   git clone --recurse-submodules <repo-url>
-   cd ludd-movie
-   ```
+**View the project in motion:** [Pixverse AI Canvas](https://app.pixverse.ai/canvas/project/view/432361748284554)
 
-2. **Create a `.env`** if any source needs credentials:
+## About This Project
 
-   ```bash
-   echo 'MY_TOKEN=<value>' > .env
-   ```
+This repository contains the complete production materials for *Little Red Riding Hood*:
 
-3. **Update the inbox**:
+- **Story Structure** — 42 scenes across 4 narrative parts
+- **Character Bible** — detailed descriptions, costume, expressions
+- **Location Bible** — environments, lighting, visual continuity
+- **Cinematic Storyboard** — camera directions, pacing, visual language
+- **Graphics Sequences** — AI-generated illustration prompts for each scene
+- **Storyboard Layouts** — full scene details with narration, dialogue, and sound
 
-   ```bash
-   git submodule update --init --recursive --remote
-   ```
-
-4. **Ingest into the wiki** — start your agent in this folder and ask:
-
-   ```
-   Ingest 00-inbox/ into the wiki
-   ```
-
-5. **Ask a question** — the agent reads `20-wiki/index.md`, synthesises an
-   answer from the relevant pages, and cites its sources.
-
-## Structure
+## Folder Structure
 
 ```
-00-inbox/     — source documents (immutable — never modify)
-10-context/   — context and background information
-20-wiki/      — structured knowledge (AI-maintained markdown pages)
-50-templates/ — reusable document templates
-workspace/    — scratch / working area (not a source for wiki output)
+production/
+  ├── storybook/          — story structure, character & location references
+  ├── sequences/          — graphics prompts organized by part
+  └── storyboard.md       — complete scene-by-scene storyboard
 ```
 
-| Folder | Purpose |
-| --- | --- |
-| `00-inbox/` | Entry point for raw source material: symlinked local folders and Git submodules. Never modified once added. |
-| `10-context/` | Stable background: goals, stakeholders, assumptions, environment. |
-| `20-wiki/` | Evergreen pages curated by the agent, organised by entity type. |
-| `50-templates/` | Reusable document templates. |
-| `workspace/` | Scratch area — never used as a source for wiki output. |
-| `AGENTS.md` | Instructions for the AI agent (ingest workflow, page format, citation rules). |
+## How to Use
 
-### `20-wiki/` organisation
+1. **Review the story** — start with `production/storybook/B-story-structure.md`
+2. **Character & location research** — explore character and place bibles
+3. **Generate graphics** — use prompts from `production/sequences/` with AI image generators
+4. **Build the storyboard** — reference `production/storyboard.md` for full scene details
 
-Organised **by entity type** into folders — never collapsed into a flat directory:
+## Creative Guidelines
 
-| Path | Contents |
-| --- | --- |
-| `index.md` | Table of contents for the whole wiki, grouped by folder. |
-| `log.md` | Append-only record of all operations. |
-| `decision/` | Decision records with context and rationale. |
-| `place/` | One page per place. |
-| `century/` | One page per century. |
-| `character/` | One page per character. |
+- **Visual style:** Watercolor Scandinavian storybook aesthetic
+- **Aspect ratio:** 16:9 (widescreen)
+- **Color palette:** Warm earth tones, mist blues, forest greens
+- **Tone:** Fairy tale wonder with subtle psychological depth
 
-Pages are interlinked with `[[wiki-links]]` that reference a page by its
-filename only (without `.md`), regardless of folder.
+---
 
-## How it works
-
-1. New sources go into `00-inbox/`.
-2. The agent reads the source, discusses key takeaways, then creates/updates
-   pages in `20-wiki/` — one file per entity, in the correct folder.
-3. Pages are interlinked with `[[wiki-links]]` and follow a consistent format.
-4. `20-wiki/index.md` and `20-wiki/log.md` are updated after every change.
-
-## Key rules
-
-- Never modify files in `00-inbox/`.
-- Keep `20-wiki/` organised by entity type; one file per entity.
-- Always update `20-wiki/index.md` and `20-wiki/log.md` after changes.
-- Every factual claim must cite its source.
+*A reimagining of a timeless story through visual narrative.*
